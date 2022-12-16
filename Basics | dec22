@@ -5,3 +5,5 @@
 sudo mysql
 create database +databasename+;
 connect +databasename+;
+create table +student+(stud_id numeric(5),stud_name varchar(20));
+desc +student+;
