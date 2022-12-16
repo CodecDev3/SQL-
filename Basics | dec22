@@ -1,5 +1,7 @@
 // 16-12-22
 
++ + indicates input
+
 sudo mysql
 create database +databasename+;
 connect +databasename+;
