@@ -1,0 +1,5 @@
+// 16-12-22
+
+sudo mysql
+create database +databasename+;
+connect +databasename+;
