@@ -1,0 +1,6 @@
+--> Creating a database
+create database +database name+;
+
+--> Drop database
+drop database +database name+;
+
