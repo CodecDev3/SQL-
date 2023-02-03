@@ -1,3 +1,13 @@
+NOT NULL - Ensures that a column cannot have a NULL value
+UNIQUE - Ensures that all values in a column are different
+PRIMARY KEY - A combination of a NOT NULL and UNIQUE. Uniquely identifies each row in a table
+FOREIGN KEY - Prevents actions that would destroy links between tables
+CHECK - Ensures that the values in a column satisfies a specific condition
+DEFAULT - Sets a default value for a column if no value is specified
+CREATE INDEX - Used to create and retrieve data from the database very quickly
+
+******************************************************************************************************************************************
+
 --> Creating a database
 create database +database name+;
 
@@ -19,9 +29,9 @@ drop table Persons;
 -> ADD
 ALTER TABLE Persons
 ADD +column_name+ *datatype*;
+
 EXAMPLE
 ADD email varchar(50);
-
 
 ALTER TABLE Persons
 ADD DOB date;             Notice that the new column, "DOB", is of type date and is going to hold a date.
