@@ -4,3 +4,16 @@ create database +database name+;
 --> Drop database
 drop database +database name+;
 
+--> Creating a table
+create table Persons (per_id int, firstn varchar(50), city varchar(50));
+
+--> Drop table
+drop table Persons;
+
+--> Alter
+
+alter table Persons
+ADD +column_name+ *datatype*;
+EXAMPLE
+ADD email varchar(50);
+
