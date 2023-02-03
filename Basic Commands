@@ -46,3 +46,33 @@ ALTER TABLE Persons
 DROP COLUMN +column_name+;
 EXAMPLE
 DROP COLUMN email;
+
+******************************************************************************************************************************************
+
+--> NOT NULL
+                              
+CREATE TABLE Persons (
+    ID int NOT NULL,
+    LastName varchar(255) NOT NULL,
+    FirstName varchar(255) NOT NULL,
+    Age int
+);
+
+ALTER TABLE Persons
+MODIFY Age int NOT NULL;
+
+--> UNIQUE          UNIQUE constraint ??
+
+CREATE TABLE Persons (
+    ID int NOT NULL,
+    LastName varchar(255) NOT NULL,
+    FirstName varchar(255),
+    Age int,
+    UNIQUE (ID)
+);
+
+To create a UNIQUE constraint on the "ID" column when the table is already created, use the following SQL:
+
+ALTER TABLE Persons
+ADD UNIQUE (ID);
+
