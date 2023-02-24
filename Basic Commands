@@ -88,3 +88,6 @@ CREATE TABLE Persons (
     PRIMARY KEY (ID)
 );
 
+INSERT INTO Persons(ID, LastName, FirstName, Age)
+VALUES(15, P, D, 23);
+
