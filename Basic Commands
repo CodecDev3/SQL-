@@ -91,3 +91,7 @@ CREATE TABLE Persons (
 INSERT INTO Persons(ID, LastName, FirstName, Age)
 VALUES(15, P, D, 23);
 
+
+
+SELECT * FROM Persons
+WHERE Age=20;
